@@ -173,10 +173,9 @@ def main():
             print("❌ 错误: --dimensions 参数是必需的")
             print("💡 提示: 可用的维度包括:")
             print("  • aesthetic_quality (美学质量)")
+            print("  • dynamic_degree (动态程度)")
             print("  • camera_motion (运镜)")
             print("  • human_identity (人物身份一致性)")
-            print("  • subject_consistency (主体一致性)")
-            print("  • 等等...")
             return
             
         print(f"🔄 正在初始化维度: {', '.join(args.dimensions)}")

@@ -1,0 +1,67 @@
+# VBench 核心评测服务依赖包 (精简版)
+# 支持 aesthetic_quality, dynamic_degree, camera_motion, human_identity
+
+# Web 框架
+Flask>=2.3.0
+flask-cors>=4.0.0
+
+# 深度学习框架  
+torch>=1.13.0
+torchvision>=0.14.0
+
+# 计算机视觉
+opencv-python>=4.8.0
+
+# 视频处理
+decord>=0.6.0
+imageio>=2.31.0
+
+# 科学计算
+numpy>=1.21.0
+scipy>=1.9.0
+
+# 工具库
+tqdm>=4.64.0
+requests>=2.28.0
+einops>=0.6.0
+
+# CLIP 支持 (for aesthetic_quality)
+ftfy>=6.1.0
+regex>=2022.7.0
+
+# 图像处理
+Pillow>=9.0.0
+
+# HTTP 客户端
+urllib3>=1.26.0
+
+# 人脸检测和识别 (for human_identity)
+retinaface-pytorch>=0.0.1
+
+# 配置文件处理
+pyyaml>=6.0
+
+# 日志处理
+colorlog>=6.7.0
+
+# 类型检查
+typing-extensions>=4.3.0
+
+# 场景检测 (for camera_motion)
+scenedetect>=0.6.0
+
+# 数学计算
+scikit-learn>=1.1.0
+scikit-image>=0.19.0
+
+# 深度学习模型下载
+gdown>=4.5.0
+huggingface-hub>=0.10.0
+
+# GPU 内存管理
+psutil>=5.9.0
+
+# 注意事项:
+# 1. 这是精简版依赖，仅支持4个核心评测维度
+# 2. 建议在虚拟环境中安装
+# 3. 某些依赖包可能需要特定的 CUDA 版本支持 

@@ -105,7 +105,7 @@ class MultiDimensionTester:
             print(f"❌ 初始化失败: {e}")
             return False
     
-    def test_initialize_multiple_dimensions(self, dimensions=["camera_motion", "aesthetic_quality"], device="cuda:0", local_mode=False):
+    def test_initialize_multiple_dimensions(self, dimensions=["aesthetic_quality", "dynamic_degree", "camera_motion", "human_identity"], device="cuda:0", local_mode=False):
         """测试初始化多个维度"""
         print(f"🚀 测试初始化多个维度: {', '.join(dimensions)}")
         try:
@@ -276,7 +276,7 @@ class MultiDimensionTester:
     def run_full_tests(self, device="cuda:0", local_mode=False, test_dimensions=None):
         """运行完整测试"""
         if test_dimensions is None:
-            test_dimensions = ["camera_motion", "aesthetic_quality"]
+            test_dimensions = ["aesthetic_quality", "dynamic_degree", "camera_motion", "human_identity"]
         
         print("=" * 60)
         print("🧪 VBench 多维度评测服务完整测试")
@@ -319,7 +319,7 @@ def main():
     parser.add_argument("--local", action="store_true", help="本地模式")
     parser.add_argument("--basic", action="store_true", help="只运行基础测试")
     parser.add_argument("--dimensions", nargs="+", 
-                       default=["camera_motion", "aesthetic_quality"],
+                       default=["aesthetic_quality", "dynamic_degree", "camera_motion", "human_identity"],
                        help="测试的维度列表")
     
     args = parser.parse_args()
